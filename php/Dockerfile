@@ -16,4 +16,5 @@ RUN curl -sS https://get.symfony.com/cli/installer | bash
 RUN mv /root/.symfony5/bin/symfony /usr/local/bin/symfony
 
 RUN git config --global user.email "antonsavich19@gmail.com" \
-   && git config --global user.name "Tony"
+   && git config --global user.name "Tony" \
+    && git config --global --add safe.directory '*'
